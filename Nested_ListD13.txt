@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    n = int(input())
+    data = []
+    scores =[]
+    for i in range(n):
+        name = input()
+        score = float(input())
+        records = [name, score]
+        data.append(records)
+        scores.append(score)
+    data.sort()
+    scores = sorted(set(scores))
+    m =scores[1]
+    namel = []
+    for val in data:
+        if m == val[1]:
+            namel.append(val[0])
+    namel.sort()
+    print(*namel, sep = "\n")
