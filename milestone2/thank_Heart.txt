@@ -1,0 +1,33 @@
+import turtle
+shreya=turtle.Screen()
+ojha = turtle.Turtle()
+shreya.bgcolor("pink")
+shreya.title("Thank you")
+ojha.pen(pencolor="white",pensize=4,speed=1)
+
+def heart():
+	ojha.fillcolor('red')
+	ojha.begin_fill()
+	ojha.left(140)
+	ojha.forward(113)
+	for i in range(200):
+		ojha.right(1)
+		ojha.forward(1)
+	ojha.left(120)
+	for i in range(200):
+		ojha.right(1)
+		ojha.forward(1)
+	ojha.forward(112)
+	ojha.end_fill()
+
+def ty():
+	ojha.up()
+	ojha.setpos(-68, 95)
+	ojha.down()
+	ojha.color('white')
+	ojha.write("Thank you di \nThank you LeanIn", font=("Times New Roman", 15, "bold"))
+
+heart()
+ty()
+ojha.ht()
+turtle.mainloop()
