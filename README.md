@@ -1,2 +1,2 @@
-# HackerRankPython
-This Repository contains solutions to HackerRack Python Programs
+# leaninpython
+this repo contains milestones in Python Programming for tenure of jan 2022 to  march 2022.
