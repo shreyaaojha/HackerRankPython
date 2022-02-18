@@ -1,0 +1,16 @@
+import turtle
+ojha=turtle.Screen()
+
+shreya=turtle.Turtle()
+ojha.bgcolor("yellow")
+ojha.title("TriangleFill")
+shreya.pen(pencolor="blue",fillcolor="red",pensize=4,speed=1)
+
+shreya.begin_fill()
+shreya.forward(200)
+shreya.left(120)
+shreya.fd(200)
+shreya.lt(120)
+shreya.fd(200)
+shreya.end_fill()
+turtle.mainloop()

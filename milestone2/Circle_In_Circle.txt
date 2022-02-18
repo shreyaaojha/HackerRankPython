@@ -1,0 +1,13 @@
+import turtle
+ojha=turtle.Screen()
+
+shreya=turtle.Turtle()
+ojha.bgcolor("yellow")
+ojha.title("CircleInCircle")
+shreya.pen(pencolor="blue",pensize=4,speed=1)
+
+s=30
+while s<=120:
+    shreya.circle(s)
+    s=s+30
+turtle.mainloop()
