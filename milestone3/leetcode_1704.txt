@@ -1,0 +1,15 @@
+#1704. Determine if String Halves Are Alike
+
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        s = s.lower()
+        l = int(len(s) / 2)
+        vowels = ('a', 'e', 'i', 'o', 'u')
+        half1 = 0
+        half2 = 0
+        for i in range(l):
+            if s[i] in vowels:
+                half1 += 1
+            if s[i + l] in vowels:
+                half2 += 1
+        return half1 == half2

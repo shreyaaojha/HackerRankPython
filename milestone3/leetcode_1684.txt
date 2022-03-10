@@ -1,0 +1,11 @@
+#1684. Count the Number of Consistent Strings
+class Solution:
+    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
+        allowed = list(allowed)
+        a = len(words)
+        for b in words:
+            for c in b:
+                if(c not in allowed):
+                    a -= 1
+                    break
+        return a

@@ -1,0 +1,9 @@
+#1748. Sum of Unique Elements
+
+class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        net_sum = 0
+        for i in nums:
+            if nums.count(i) == 1:
+                net_sum +=i
+        return(net_sum)

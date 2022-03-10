@@ -1,0 +1,19 @@
+#2108. Find First Palindromic String in the Array
+
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        def isPal(word):
+            i, n = 0, len(word)-1
+            while i < n:
+                if word[i] != word[n]:
+                    return False
+                i += 1; n -= 1
+                
+            return True
+        
+        l = ""
+        for word in words:
+            if isPal(word):
+                return word
+            
+        return l 

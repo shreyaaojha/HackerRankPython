@@ -1,0 +1,9 @@
+#977. Squares of a Sorted Array
+
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        sq=[]
+        for i in nums:
+            sq.append(i*i)
+            sq.sort()
+        return sq

@@ -1,0 +1,7 @@
+#1346. Check If N and Its Double Exist
+
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        for n in range(len(arr)):
+            if (arr[n]/2 in arr[n+1:]) or (arr[n]*2 in arr[n+1:]): return True
+        return False

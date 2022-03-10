@@ -1,0 +1,7 @@
+#1323. Maximum 69 Number
+
+class Solution:
+    def maximum69Number (self, num: int) -> int:
+        num = str(num) 
+        numh = num.replace("6", "9", 1)
+        return numh
